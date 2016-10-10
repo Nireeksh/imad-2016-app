@@ -4,6 +4,44 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articleOne={
+  tile:'  article one i am nireeksha',
+  heading:'Article one',
+  date:'sep 5,2016',
+  content:`     
+  <p>This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article</p>
+            <p>This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article</p>
+            <p>This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article</p>`
+        
+};
+var htmlTemplate=`
+<html>
+    <head>
+        ${title}
+        <meta name="viewport" content="width-device-width,initial-scale-1">
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+        <div>
+            <a href='/'>Home</a>
+        </div>
+        <hr/>
+        <h3>
+            ${heading}
+        </h3>
+        <div>
+            ${date}
+        </div>
+        <div>
+            ${content}
+        </div>
+        </div>
+    </body>
+</html>
+`;
+
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
