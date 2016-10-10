@@ -8,7 +8,7 @@ var articleOne={
   tile:'  article one i am nireeksha',
   heading:'Article one',
   date:'sep 5,2016',
-  content:`     
+  content:  `
   <p>This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article</p>
             <p>This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article</p>
             <p>This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article.This is a content for ma first article</p>`
